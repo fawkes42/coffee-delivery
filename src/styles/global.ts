@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
         opacity: 0.7;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: ${(props) => props.theme.breakpoints.xl}) {
         html {
             font-size: 70%;
         }
