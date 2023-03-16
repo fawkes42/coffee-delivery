@@ -69,9 +69,18 @@ export const ProductPriceContainer = styled.div`
 `;
 
 export const ProductPrice = styled.span`
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: ${props => props.theme.colors.subtitle};
+    font-family: 'Baloo 2', cursive;
+    color: ${props => props.theme.colors.text};
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+
+    & > span:first-child {
+        font-size: 0.875rem;
+    }
 `;
 
 export const ProductAddToCartButton = styled.button`

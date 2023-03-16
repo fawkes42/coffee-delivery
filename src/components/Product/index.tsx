@@ -25,7 +25,10 @@ export function Product() {
             <ProductTitle>Café do dia</ProductTitle>
             <ProductDescription>O tradicional café feito com água quente e grãos moídos</ProductDescription>
             <ProductPriceContainer>
-                <ProductPrice>R$ 10,00</ProductPrice>
+                <ProductPrice>
+                    <span>R$</span>
+                    <span>5,00</span>
+                </ProductPrice>
                 <Amount />
                 <ProductAddToCartButton>
                     <ShoppingCart size={22} weight="fill" />
