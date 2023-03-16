@@ -1,16 +1,18 @@
 import { HeaderContainer } from "./styles";
 import Logo from "../../assets/logo.svg";
 import LogoDark from "../../assets/logo-dark.svg";
-import { ShoppingCart, MapPin } from "phosphor-react";
+import { ShoppingCart, MapPin, Sun, Moon } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
-import { ThemeContext } from "styled-components";
+import { useTheme } from "styled-components";
+import { ToggleThemeContext } from "../../Contexts/ToggleTheme";
 
 export function Header() {
-    const themeContext = useContext(ThemeContext)
+    const theme = useTheme()
+    const { toggleTheme } = useContext(ToggleThemeContext)
     return (
         <HeaderContainer>
-            <img src={themeContext.variant === 'default' ? Logo : LogoDark} alt="Logo" />
+            <img src={theme.variant === 'default' ? Logo : LogoDark} alt="Logo" />
             <nav>
                 <NavLink to="/" title="Locale">
                     <MapPin size={24} weight="fill" />
@@ -18,6 +20,15 @@ export function Header() {
                 </NavLink>
                 <NavLink to="/" title="Cart">
                     <ShoppingCart size={24} weight="fill" />
+                </NavLink>
+                <NavLink to="" title="Switch Theme" onClick={toggleTheme}>
+                    {
+                        theme.variant === 'default' ? (
+                            <Moon size={24} weight="fill" />
+                        ) : (
+                            <Sun size={24} weight="fill" />
+                        )
+                    }
                 </NavLink>
             </nav>
         </HeaderContainer>

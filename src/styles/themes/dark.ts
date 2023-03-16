@@ -1,5 +1,6 @@
 export const darkTheme = {
     variant: 'dark',
+    toggleTheme: () => { },
     colors: {
         border: '#121214',
         white: '#fff',

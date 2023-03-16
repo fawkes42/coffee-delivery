@@ -1,5 +1,6 @@
 export const defaultTheme = {
     variant: 'default',
+    toggleTheme: () => { },
     colors: {
         border: '#121214',
         white: '#fff',

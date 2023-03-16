@@ -37,6 +37,11 @@ export const HeaderContainer = styled.header`
                 color: ${props => props.theme.colors["yellow-dark"]};
                 background: ${props => props.theme.colors["yellow-light"]};
             }
+
+            &:nth-child(3){
+                color: ${props => props.theme.colors["yellow-dark"]};
+                background: ${props => props.theme.colors["yellow-light"]};
+            }
         }
     }
 
