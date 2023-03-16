@@ -19,6 +19,12 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 
+    h1, h2, h3, h4, h5, h6, strong {
+        font-weight: 800;
+        font-family: 'Baloo 2', cursive;
+        color: ${props => props.theme.colors.title};
+    }
+
     :focus {
         outline: 0;
     }

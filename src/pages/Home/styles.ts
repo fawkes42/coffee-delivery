@@ -86,8 +86,6 @@ export const IntroInfo = styled.div`
 
     h1 {
         font-size: 3rem;
-        font-weight: 600;
-        color: ${props => props.theme.colors.title};
     }
 
     p {
