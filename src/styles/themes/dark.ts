@@ -17,7 +17,7 @@ export const darkTheme = {
         'purple-light': 'rgba(128, 71, 248, 0.1)',
         yellow: '#C47F17',
         'yellow-dark': '#A47C1B',
-        'yellow-light': '#F1E9C9',
+        'yellow-light': 'rgba(219, 172, 44, 0.1)',
 
     },
     fonts: {

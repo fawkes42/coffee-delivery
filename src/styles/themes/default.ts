@@ -14,10 +14,10 @@ export const defaultTheme = {
         title: '#272221',
         purple: '#8047F8',
         'purple-dark': '#4B2995',
-        'purple-light': 'rgba(128, 71, 248, 0.1)',
+        'purple-light': 'rgba(128, 71, 248, 0.2)',
         yellow: '#DBAC2C',
         'yellow-dark': '#C47F17',
-        'yellow-light': '#F1E9C9',
+        'yellow-light': 'rgba(219, 172, 44, 0.2)',
 
     },
     fonts: {
