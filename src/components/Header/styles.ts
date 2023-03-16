@@ -30,7 +30,7 @@ export const HeaderContainer = styled.header`
             
             &:first-child{
                 color: ${props => props.theme.colors.purple};
-                background: ${props => props.theme.colors["purple-light"]};
+                background-color: ${props => props.theme.colors["purple-light"]};
             }
 
             &:nth-child(2){

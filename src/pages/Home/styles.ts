@@ -27,6 +27,13 @@ export const IntroContainer = styled.div<IntroProps>`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    ${props => props.theme.variant === "dark" ? `
+        box-shadow: inset 100px 1px 100px 100px ${props.theme.colors.background};
+    `
+        : `
+        box-shadow: inset 0 0 40px 10px ${props.theme.colors.background};
+    `}
 `;
 
 export const IntroContent = styled.div`

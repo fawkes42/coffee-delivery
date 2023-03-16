@@ -1,4 +1,5 @@
 export const darkTheme = {
+    variant: 'dark',
     colors: {
         border: '#121214',
         white: '#fff',
@@ -13,7 +14,7 @@ export const darkTheme = {
         title: '#e1e1e6',
         purple: '#8047F8',
         'purple-dark': '#4B2995',
-        'purple-light': '#EBE5F9',
+        'purple-light': 'rgba(128, 71, 248, 0.1)',
         yellow: '#C47F17',
         'yellow-dark': '#A47C1B',
         'yellow-light': '#F1E9C9',
@@ -50,7 +51,7 @@ export const darkTheme = {
         10: '2.5rem',
     },
     sizes: {
-        container: '960px',
+        container: 'calc(100vw - 10rem)',
     },
     breakpoints: {
         sm: '576px',

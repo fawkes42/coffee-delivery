@@ -1,4 +1,5 @@
 export const defaultTheme = {
+    variant: 'default',
     colors: {
         border: '#121214',
         white: '#fff',
@@ -13,7 +14,7 @@ export const defaultTheme = {
         title: '#272221',
         purple: '#8047F8',
         'purple-dark': '#4B2995',
-        'purple-light': '#EBE5F9',
+        'purple-light': 'rgba(128, 71, 248, 0.1)',
         yellow: '#DBAC2C',
         'yellow-dark': '#C47F17',
         'yellow-light': '#F1E9C9',
