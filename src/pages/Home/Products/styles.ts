@@ -32,11 +32,14 @@ export const ProductsList = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
-    margin: 0 auto;
     gap: 2.5rem;
 
     @media (max-width: ${props => props.theme.breakpoints.xxl}) {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: ${props => props.theme.breakpoints.xl}) {
+        margin: 0 auto;
     }
 
     @media (max-width: ${props => props.theme.breakpoints.lg}) {
