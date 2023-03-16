@@ -16,7 +16,6 @@ export const HomeContainer = styled.main`
     align-items: center;
     justify-content: center;
     width: 100vw;
-    overflow-x: hidden;
 `
 
 export const IntroContainer = styled.div<IntroProps>`
@@ -124,7 +123,7 @@ export const IntroBenefits = styled.div`
 export const IntroBenefitItem = styled.div<IntroBenefitItemProps>`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0.5rem;
     svg {
         width: 1.5rem;
@@ -136,5 +135,11 @@ export const IntroBenefitItem = styled.div<IntroBenefitItemProps>`
 
         color: ${props => props.theme.colors.background};
         background: ${props => props.theme.colors[props.variant]};
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: ${props => props.theme.colors.text};
     }
 `; 

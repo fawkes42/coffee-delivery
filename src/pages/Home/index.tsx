@@ -14,6 +14,7 @@ import {
     ShoppingCart,
     Timer
 } from "phosphor-react";
+import { Products } from "./Products";
 
 export function Home() {
     return (
@@ -26,25 +27,26 @@ export function Home() {
                         <IntroBenefits>
                             <IntroBenefitItem variant="yellow-dark">
                                 <ShoppingCart size={16} weight="fill" />
-                                Compra simples e segura
+                                <p>Compra simples e segura</p>
                             </IntroBenefitItem>
                             <IntroBenefitItem variant="text">
                                 <Package size={16} weight="fill" />
-                                Embalagem mantém o café intacto
+                                <p>Embalagem mantém o café intacto</p>
                             </IntroBenefitItem>
                             <IntroBenefitItem variant="yellow">
                                 <Timer size={16} weight="fill" />
-                                Compra simples e segura
+                                <p>Compra simples e segura</p>
                             </IntroBenefitItem>
                             <IntroBenefitItem variant="purple">
                                 <Coffee size={16} weight="fill" />
-                                O café chega fresquinho até você
+                                <p>O café chega fresquinho até você</p>
                             </IntroBenefitItem>
                         </IntroBenefits>
                     </IntroInfo>
                     <img src={CoffeeIntro} alt="A cup of coffee and some grain of coffee" />
-                </IntroContent >
-            </IntroContainer >
-        </HomeContainer >
+                </IntroContent>
+            </IntroContainer>
+            <Products />
+        </HomeContainer>
     )
 }

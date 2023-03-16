@@ -22,8 +22,6 @@ export const HeaderContainer = styled.header`
 
             text-decoration: none;
 
-            transition: all 0.2s;
-
             &:hover {
                 filter: brightness(0.9);
             }
@@ -42,11 +40,18 @@ export const HeaderContainer = styled.header`
                 color: ${props => props.theme.colors["yellow-dark"]};
                 background: ${props => props.theme.colors["yellow-light"]};
             }
+
+            @media (max-width: 400px) {
+                padding: 0.5rem;
+            }
         }
     }
 
     @media (max-width: ${props => props.theme.breakpoints.md}) {
         width: 100%;
         padding: 0 2rem;
+    }
+    @media (max-width: 400px) {
+        padding: 0 1rem;
     }
 `

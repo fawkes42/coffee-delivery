@@ -5,12 +5,20 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
+        transition: all 0.5s ease-in-out;
     }
 
     body {
         background: ${(props) => props.theme.colors.background};
         color: ${(props) => props.theme.colors.text};
         -webkit-font-smoothing: antialiased;
+
+        max-width: calc(100vw - 3rem);
+
+        margin: 0 auto;
+        
+        overflow-x: hidden;
     }
 
     body, input, textarea, button {
