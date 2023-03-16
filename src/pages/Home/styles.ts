@@ -53,6 +53,10 @@ export const IntroContent = styled.div`
         height: 22.5rem;
     }
 
+    @media (max-width: ${props => props.theme.breakpoints.xxl}) {
+        margin-top: 4.5rem;
+    }
+
     @media (max-width: ${props => props.theme.breakpoints.xl}) {
         flex-direction: column;
         align-items: center;
