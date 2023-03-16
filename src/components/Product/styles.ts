@@ -37,12 +37,12 @@ export const ProductTagsContainer = styled.div`
 `;
 
 export const ProductTag = styled.div`
-    padding: 0.5rem;
+    padding: 0.3rem 0.5rem;
 
     background: ${props => props.theme.colors["yellow-light"]};
     border-radius: 100px;
 
-    font-size: 0.75rem;
+    font-size: 0.625rem;
     font-weight: 800;
     color: ${props => props.theme.colors["yellow-dark"]};
 `;
@@ -56,11 +56,38 @@ export const ProductTitle = styled.h3`
 export const ProductDescription = styled.p`
     font-size: 0.875rem;
     font-weight: 400;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.label};
+`;
+
+export const ProductPriceContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    height: 2.375rem;
 `;
 
 export const ProductPrice = styled.span`
     font-size: 1.25rem;
     font-weight: 600;
     color: ${props => props.theme.colors.subtitle};
+`;
+
+export const ProductAddToCartButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.375rem;
+    height: 100%;
+
+    border: 0;
+    border-radius: 6px;
+    padding: 0.5rem;
+
+    color: ${props => props.theme.colors.purple};
+    background-color: ${props => props.theme.colors["purple-light"]};
+
+    cursor: pointer;
 `;

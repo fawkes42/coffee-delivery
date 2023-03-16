@@ -22,10 +22,6 @@ export const HeaderContainer = styled.header`
 
             text-decoration: none;
 
-            &:hover {
-                filter: brightness(0.9);
-            }
-            
             &:first-child{
                 color: ${props => props.theme.colors.purple};
                 background-color: ${props => props.theme.colors["purple-light"]};

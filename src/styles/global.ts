@@ -25,12 +25,22 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 1rem;
+        color: ${(props) => props.theme.colors.text};
     }
 
     h1, h2, h3, h4, h5, h6, strong {
         font-weight: 800;
         font-family: 'Baloo 2', cursive;
         color: ${props => props.theme.colors.title};
+    }
+
+    a:hover, button:hover {
+        ${props => props.theme.variant === "dark" ? `
+            backdrop-filter: brightness(1.9);
+        `
+        : `
+            backdrop-filter: brightness(0.9);
+        `}
     }
 
     :focus {
