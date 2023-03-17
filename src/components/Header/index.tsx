@@ -18,10 +18,10 @@ export function Header() {
                     <MapPin size={24} weight="fill" />
                     São Paulo, SP
                 </NavLink>
-                <NavLink to="/" title="Cart">
+                <NavLink to="/checkout" title="Cart">
                     <ShoppingCart size={24} weight="fill" />
                 </NavLink>
-                <NavLink to="" title="Switch Theme" onClick={toggleTheme}>
+                <a title="Switch Theme" onClick={toggleTheme}>
                     {
                         theme.variant === 'default' ? (
                             <Moon size={24} weight="fill" />
@@ -29,7 +29,7 @@ export function Header() {
                             <Sun size={24} weight="fill" />
                         )
                     }
-                </NavLink>
+                </a>
             </nav>
         </HeaderContainer>
     )
