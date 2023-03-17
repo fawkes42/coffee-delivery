@@ -52,7 +52,7 @@ export const darkTheme = {
         10: '2.5rem',
     },
     sizes: {
-        container: 'calc(100vw - 10rem)',
+        container: '70rem',
     },
     breakpoints: {
         sm: '576px',

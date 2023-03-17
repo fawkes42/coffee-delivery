@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${(props) => props.theme.colors.text};
         -webkit-font-smoothing: antialiased;
 
-        max-width: calc(100vw - 3rem);
+        max-width: ${props => props.theme.sizes.container};
 
         margin: 0 auto;
         

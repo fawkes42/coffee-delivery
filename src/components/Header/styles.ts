@@ -3,9 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
-    width: ${props => props.theme.sizes.container};
-
-    padding: 0 10rem;
+    align-items: center;
 
     nav {
         display: flex;
@@ -36,18 +34,10 @@ export const HeaderContainer = styled.header`
                 color: ${props => props.theme.colors["yellow-dark"]};
                 background: ${props => props.theme.colors["yellow-light"]};
             }
-
-            @media (max-width: 400px) {
-                padding: 0.5rem;
-            }
         }
     }
 
-    @media (max-width: ${props => props.theme.breakpoints.md}) {
-        width: 100%;
-        padding: 0 2rem;
-    }
-    @media (max-width: 400px) {
-        padding: 0 1rem;
+    @media (max-width: ${props => props.theme.breakpoints.lg}) {
+        margin: 0 2rem;
     }
 `

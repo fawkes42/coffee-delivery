@@ -15,7 +15,6 @@ export const HomeContainer = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
 `
 
 export const IntroContainer = styled.div<IntroProps>`
@@ -36,11 +35,10 @@ export const IntroContainer = styled.div<IntroProps>`
 `;
 
 export const IntroContent = styled.div`
-    width: ${props => props.theme.sizes.container};
+    max-width: ${props => props.theme.sizes.container};
     min-height: 34rem;
 
     margin: 0 auto;
-    padding: 0 10rem;
 
     display: flex;
     align-items: center;
@@ -53,7 +51,7 @@ export const IntroContent = styled.div`
     }
 
     @media (max-width: ${props => props.theme.breakpoints.xxl}) {
-        margin-top: 4.5rem;
+        margin-top: 3rem;
     }
 
     @media (max-width: ${props => props.theme.breakpoints.xl}) {

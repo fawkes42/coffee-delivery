@@ -2,44 +2,30 @@ import styled from "styled-components";
 
 export const CheckoutContainer = styled.div`
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
 
-    width: ${props => props.theme.sizes.container};
-
-    padding: 0 10rem;
     margin-top: 5rem;
 
-    @media (max-width: ${props => props.theme.breakpoints.xxl}) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    @media (max-width: ${props => props.theme.breakpoints.md}) {
+    @media (max-width: ${props => props.theme.breakpoints.lg}) {
+        width: 100%;
         padding: 0 2rem;
-    }
-
-    @media (max-width: ${props => props.theme.breakpoints.sm}) {
-        padding: 0 3rem;
-        width: 100vw;
     }
 `;
 
 export const CheckoutContent = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    max-width: ${props => props.theme.sizes.container};
+    @media (max-width: ${props => props.theme.breakpoints.lg}) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 `;
 
 export const CheckoutCard = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    max-width: ${props => props.theme.sizes.container};
-    width: 40rem;
+    max-width: 40rem;
+    width: 100%;
 
     padding: 2.5rem;
     margin-top: 1rem;
@@ -48,13 +34,14 @@ export const CheckoutCard = styled.div`
     border-radius: 6px;
 `;
 
-export const CheckoutTitle = styled.div`
+export const CheckoutCardHeader = styled.div`
     display: flex;
     gap: 0.5rem;
 
     margin-bottom: 2rem;
+`
 
-    div {
+export const CheckoutCardHeaderTitle = styled.div`
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -63,9 +50,13 @@ export const CheckoutTitle = styled.div`
             font-weight: 500;
             font-size: 1rem;
         }
-    }
 
-
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: ${props => props.theme.colors.text};
+        }
 `
 
 export const CheckoutFormContent = styled.div`
@@ -76,7 +67,8 @@ export const CheckoutFormContent = styled.div`
 `;
 
 export const AddressInput = styled.input`
-    width: ${props => props.width + 'rem'};
+    max-width: ${props => props.width + 'rem'};
+    width: 100%;
     padding: 1rem;
     border: 1px solid ${props => props.theme.colors.button};
     border-radius: 4px;
@@ -84,6 +76,8 @@ export const AddressInput = styled.input`
     background: ${props => props.theme.colors.input};
 
     font-size: 0.875rem;
+
+    
 `;
 
 export const CheckoutPaymentTypeContainer = styled.div`
@@ -115,3 +109,22 @@ export const CheckoutPaymentType = styled.div`
         color: ${props => props.theme.colors.text};
     }
 `;
+
+
+export const CartContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    max-width: 28rem;
+    width: 100%;
+
+    padding: 2.5rem;
+    margin-top: 1rem;
+
+    background: ${props => props.theme.colors.card};
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 44px;
+    border-bottom-left-radius: 44px;
+    border-bottom-right-radius: 6px;
+`

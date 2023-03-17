@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
-    width: ${props => props.theme.sizes.container};
-
-    margin: 0 auto;
-    padding: 0 10rem;
-
     display: flex;
     flex-direction: column;
     gap: 3.375rem;

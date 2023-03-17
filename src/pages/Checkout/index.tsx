@@ -5,10 +5,12 @@ import {
     AddressInput,
     CheckoutCard,
     CheckoutFormContent,
-    CheckoutTitle,
     CheckoutPaymentTypeContainer,
     CheckoutPaymentType,
     CheckoutContent,
+    CartContainer,
+    CheckoutCardHeader,
+    CheckoutCardHeaderTitle,
 } from "./styles";
 
 export function Checkout() {
@@ -16,19 +18,19 @@ export function Checkout() {
     return (
         <CheckoutContainer>
             <CheckoutContent>
-                <h3>Complete seu pedido</h3>
                 <form action="">
+                    <h3>Complete seu pedido</h3>
                     <CheckoutCard>
-                        <CheckoutTitle>
+                        <CheckoutCardHeader>
                             <MapPinLine
                                 size={22}
                                 color={theme.colors.yellow}
                             />
-                            <div>
+                            <CheckoutCardHeaderTitle>
                                 <h3>Endereço de entrega</h3>
                                 <p>Informe o endereço onde deseja receber seu pedido</p>
-                            </div>
-                        </CheckoutTitle>
+                            </CheckoutCardHeaderTitle>
+                        </CheckoutCardHeader>
                         <CheckoutFormContent>
                             <AddressInput
                                 type="text"
@@ -71,16 +73,16 @@ export function Checkout() {
                     </CheckoutCard>
                 </form>
                 <CheckoutCard>
-                    <CheckoutTitle>
+                    <CheckoutCardHeader>
                         <CurrencyDollar
                             size={22}
                             color={theme.colors.purple}
                         />
-                        <div>
+                        <CheckoutCardHeaderTitle>
                             <h3>Forma de pagamento</h3>
                             <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
-                        </div>
-                    </CheckoutTitle>
+                        </CheckoutCardHeaderTitle>
+                    </CheckoutCardHeader>
                     <CheckoutPaymentTypeContainer>
                         <CheckoutPaymentType>
                             <CreditCard size={16} color={theme.colors.purple} />
@@ -100,17 +102,17 @@ export function Checkout() {
             </CheckoutContent>
             <CheckoutContent>
                 <h3>Resumo do pedido</h3>
-                <CheckoutCard>
-                    <CheckoutTitle>
+                <CartContainer>
+                    <CheckoutCardHeader>
                         <CurrencyDollar
                             size={22}
                             color={theme.colors.purple}
                         />
-                        <div>
+                        <CheckoutCardHeaderTitle>
                             <h3>Forma de pagamento</h3>
                             <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
-                        </div>
-                    </CheckoutTitle>
+                        </CheckoutCardHeaderTitle>
+                    </CheckoutCardHeader>
                     <CheckoutPaymentTypeContainer>
                         <CheckoutPaymentType>
                             <CreditCard size={16} color={theme.colors.purple} />
@@ -126,7 +128,7 @@ export function Checkout() {
                         </CheckoutPaymentType>
 
                     </CheckoutPaymentTypeContainer>
-                </CheckoutCard>
+                </CartContainer>
             </CheckoutContent>
 
         </CheckoutContainer>
