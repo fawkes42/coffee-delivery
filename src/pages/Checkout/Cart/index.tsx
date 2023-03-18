@@ -26,7 +26,12 @@ export function Cart() {
                     <p>Total</p>
                     <strong>R$ 15,00</strong>
                 </CartTotal>
-                <CartButton>CONFIRMAR PEDIDO</CartButton>
+                <CartButton
+                    to="/success"
+                    title="Confirmar pedido"
+                >
+                    CONFIRMAR PEDIDO
+                </CartButton>
             </CartFooter>
         </CartContainer>
     )

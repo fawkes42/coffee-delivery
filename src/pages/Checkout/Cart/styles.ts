@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const CartContainer = styled.div`
@@ -69,7 +70,7 @@ export const CartTotal = styled.div`
     }
 `;
 
-export const CartButton = styled.button`
+export const CartButton = styled(NavLink)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,9 +81,11 @@ export const CartButton = styled.button`
 
     font-size: 0.875rem;
     font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: ${props => props.theme.colors.yellow};
 
     background: ${props => props.theme.colors["yellow-light"]};
-    color: ${props => props.theme.colors.yellow};
 
     border: none;
     border-radius: 6px;

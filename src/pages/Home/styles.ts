@@ -131,8 +131,11 @@ export const IntroBenefitItem = styled.div<IntroBenefitItemProps>`
         border: 0;
         border-radius: 50%;
 
-        color: ${props => props.theme.colors.background};
         background: ${props => props.theme.colors[props.variant]};
+
+        & > * {
+            color: ${props => props.theme.colors.background};
+        }
     }
 
     p {
