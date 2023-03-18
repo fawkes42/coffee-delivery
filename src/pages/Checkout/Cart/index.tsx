@@ -1,7 +1,9 @@
+import { CheckoutProduct } from "../../../components/CheckoutProduct";
 import {
     CartButton,
     CartContainer,
     CartContent,
+    CartContentDivider,
     CartFooter,
     CartTotal,
 } from "./styles";
@@ -10,9 +12,10 @@ export function Cart() {
     return (
         <CartContainer>
             <CartContent>
-                <span>PRODUTO</span>
-                <span>PRODUTO</span>
-                <span>PRODUTO</span>
+                <CheckoutProduct />
+                <CartContentDivider />
+                <CheckoutProduct />
+                <CartContentDivider />
             </CartContent>
             <CartFooter>
                 <CartTotal>

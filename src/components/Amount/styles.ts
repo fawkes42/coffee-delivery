@@ -8,7 +8,7 @@ export const AmountContainer = styled.div`
 
     background: ${props => props.theme.colors.button};
 
-    border-radius: 0.5rem;
+    border-radius: 6px;
     padding: 0.5rem;
 
     max-height: 100%;
